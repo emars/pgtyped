@@ -1,6 +1,6 @@
-import * as queryModule from '@pgtyped/query';
-import { parseSQLFile, parseTypeScriptFile } from '@pgtyped/query';
-import { IQueryTypes } from '@pgtyped/query/lib/actions';
+import * as queryModule from 'pgtyped-query-2';
+import { parseSQLFile, parseTypeScriptFile } from 'pgtyped-query-2';
+import { IQueryTypes } from 'pgtyped-query-2/lib/actions';
 import { generateInterface, queryToTypeDeclarations } from './generator';
 import { ProcessingMode } from './index';
 import { DefaultTypeMapping, TypeAllocator } from './types';
@@ -58,14 +58,14 @@ describe('query-to-interface translation', () => {
       getTypesMocked.mockResolvedValue(mockTypes);
       const types = new TypeAllocator(DefaultTypeMapping);
       // Test out imports
-      types.use({ name: 'PreparedQuery', from: '@pgtyped/query' });
+      types.use({ name: 'PreparedQuery', from: 'pgtyped-query-2' });
       const result = await queryToTypeDeclarations(
         parsedQuery(mode, queryString),
         null,
         types,
         {} as ParsedConfig,
       );
-      const expectedTypes = `import { PreparedQuery } from '@pgtyped/query';
+      const expectedTypes = `import { PreparedQuery } from 'pgtyped-query-2';
 
 export type PayloadType = 'message' | 'dynamite';
 
@@ -257,14 +257,14 @@ export interface IDeleteUsersQuery {
       getTypesMocked.mockResolvedValue(mockTypes);
       const types = new TypeAllocator(DefaultTypeMapping);
       // Test out imports
-      types.use({ name: 'PreparedQuery', from: '@pgtyped/query' });
+      types.use({ name: 'PreparedQuery', from: 'pgtyped-query-2' });
       const result = await queryToTypeDeclarations(
         parsedQuery(mode, queryString),
         null,
         types,
         { camelCaseColumnNames: true } as ParsedConfig,
       );
-      const expectedTypes = `import { PreparedQuery } from '@pgtyped/query';
+      const expectedTypes = `import { PreparedQuery } from 'pgtyped-query-2';
 
 export type PayloadType = 'message' | 'dynamite';
 
@@ -332,14 +332,14 @@ export interface IGetNotificationsQuery {
       getTypesMocked.mockResolvedValue(mockTypes);
       const types = new TypeAllocator(DefaultTypeMapping);
       // Test out imports
-      types.use({ name: 'PreparedQuery', from: '@pgtyped/query' });
+      types.use({ name: 'PreparedQuery', from: 'pgtyped-query-2' });
       const result = await queryToTypeDeclarations(
         parsedQuery(mode, queryString),
         null,
         types,
         { camelCaseColumnNames: true } as ParsedConfig,
       );
-      const expectedTypes = `import { PreparedQuery } from '@pgtyped/query';
+      const expectedTypes = `import { PreparedQuery } from 'pgtyped-query-2';
 
 export type PayloadType = 'message' | 'dynamite';
 
@@ -403,14 +403,14 @@ export interface IGetNotificationsQuery {
       getTypesMocked.mockResolvedValue(mockTypes);
       const types = new TypeAllocator(DefaultTypeMapping);
       // Test out imports
-      types.use({ name: 'PreparedQuery', from: '@pgtyped/query' });
+      types.use({ name: 'PreparedQuery', from: 'pgtyped-query-2' });
       const result = await queryToTypeDeclarations(
         parsedQuery(mode, queryString),
         null,
         types,
         {} as ParsedConfig,
       );
-      const expectedTypes = `import { PreparedQuery } from '@pgtyped/query';
+      const expectedTypes = `import { PreparedQuery } from 'pgtyped-query-2';
 
 export type PayloadType = 'message' | 'dynamite';
 

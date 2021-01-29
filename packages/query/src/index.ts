@@ -9,7 +9,7 @@ export {
 export { processTSQueryAST } from './preprocessor-ts';
 export { processSQLQueryAST } from './preprocessor-sql';
 
-export { AsyncQueue } from '@pgtyped/wire';
+export { AsyncQueue } from 'pgtyped-wire-2';
 
 export {
   default as parseTypeScriptFile,

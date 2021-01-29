@@ -5,7 +5,7 @@ import {
   isImport,
   MappableType,
   Type,
-} from '@pgtyped/query/lib/type';
+} from 'pgtyped-query-2/lib/type';
 
 const String: Type = { name: 'string' };
 const Number: Type = { name: 'number' };

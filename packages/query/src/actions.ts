@@ -1,4 +1,4 @@
-import { AsyncQueue, messages, PreparedObjectType } from '@pgtyped/wire';
+import { AsyncQueue, messages, PreparedObjectType } from 'pgtyped-wire-2';
 import crypto from 'crypto';
 import tls from 'tls';
 import debugBase from 'debug';

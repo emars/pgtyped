@@ -1,5 +1,5 @@
 /** Types generated for queries found in "src/notifications/notifications.sql" */
-import { PreparedQuery } from '@pgtyped/query';
+import { PreparedQuery } from 'pgtyped-query-2';
 
 export type notification_type = 'notification' | 'reminder' | 'deadline';
 

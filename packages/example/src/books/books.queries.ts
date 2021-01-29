@@ -1,5 +1,5 @@
 /** Types generated for queries found in "src/books/books.sql" */
-import { PreparedQuery } from '@pgtyped/query';
+import { PreparedQuery } from 'pgtyped-query-2';
 
 export type stringArray = (string)[];
 

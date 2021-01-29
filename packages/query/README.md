@@ -1,4 +1,4 @@
-## @pgtyped/query
+## pgtyped-query-2
 
 This package provides the `sql` tagged template.  
 The `sql` tagged template requires a generic parameter: `<TQueryType>`.

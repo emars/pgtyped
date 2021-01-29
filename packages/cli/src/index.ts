@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { AsyncQueue, startup } from '@pgtyped/query';
+import { AsyncQueue, startup } from 'pgtyped-query-2';
 import chokidar from 'chokidar';
 import fs from 'fs';
 import glob from 'glob';

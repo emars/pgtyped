@@ -1,4 +1,4 @@
-import { sql } from '@pgtyped/query';
+import { sql } from 'pgtyped-query-2';
 import { IGetUsersWithCommentsQuery } from './sample.types';
 import { Client } from 'pg';
 

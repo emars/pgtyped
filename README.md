@@ -25,7 +25,7 @@ Visit our new documentation page at [https://pgtyped.now.sh/](https://pgtyped.no
 
 ### Getting started
 
-1. `npm install @pgtyped/cli @pgtyped/query typescript` (typescript is a required peer dependency for pgtyped)
+1. `npm install pgtyped-cli-2 pgtyped-query-2 typescript` (typescript is a required peer dependency for pgtyped)
 2. Create a PgTyped `config.json` file.
 3. Run `npx pgtyped -w -c config.json` to start PgTyped in watch mode.
 

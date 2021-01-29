@@ -8,7 +8,7 @@ import {
   processSQLQueryAST,
   SQLQueryAST,
   TSQueryAST,
-} from '@pgtyped/query';
+} from 'pgtyped-query-2';
 import { camelCase } from 'camel-case';
 import { pascalCase } from 'pascal-case';
 import { ProcessingMode } from './index';
@@ -267,7 +267,7 @@ export async function generateDeclarationFile(
   config: ParsedConfig,
 ): Promise<{ typeDecs: ITypedQuery[]; declarationFileContents: string }> {
   if (mode === 'sql') {
-    types.use({ name: 'PreparedQuery', from: '@pgtyped/query' });
+    types.use({ name: 'PreparedQuery', from: 'pgtyped-query-2' });
   }
   const typeDecs = await generateTypedecsFromFile(
     contents,
