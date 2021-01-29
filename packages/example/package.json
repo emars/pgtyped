@@ -1,6 +1,6 @@
 {
   "name": "pgtyped-example-2",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "A package demonstrating how pgtyped works.",
   "author": "Adel Salakh",
   "private": true,
@@ -24,8 +24,8 @@
     "@types/pg": "7.14.7",
     "expect": "26.6.2",
     "pg": "8.5.1",
-    "pgtyped-cli-2": "^0.11.0",
-    "pgtyped-query-2": "^0.11.0",
+    "pgtyped-cli-2": "^0.12.0",
+    "pgtyped-query-2": "^0.12.0",
     "typescript": "3.8.3"
   },
   "devDependencies": {
